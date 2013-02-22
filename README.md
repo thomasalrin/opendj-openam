@@ -8,7 +8,7 @@ Requirements
 	
 Platform:
 
-* Debian, Ubuntu, centos, redhat, fedora (OpenJDK)
+* Debian, Ubuntu (OpenJDK)
 
 The following Opscode cookbooks are dependencies:
 
@@ -17,12 +17,11 @@ The following Opscode cookbooks are dependencies:
 
 Attributes
 ==========
-* 'node["opendj"]["source"]' - The source file of opendj.zip, default 'https://s3-ap-southeast-1.amazonaws.com/megam/chef/opendj/opendj.zip'
-* 'node["opendj"]["cmd"]["config"]' - The command to configure OpenDJ
-* 'node["opendj"]["arg-val"]["baseDN"]' - LDAP BaseDN value, default "dc=example,dc=com"
-* 'node["opendj"]["arg-val"]["rootUserDN"]' - LDAP root user name, default "n=Directory Manager"
-* 'node["opendj"]["arg-val"]["rootUserPassword"]' - LDAP root user password, default "secret12"
-* 'node["opendj"]["arg-val"]["ldapPort"]' - LDAP port value, default 1389
+* `node["opendj"]["source"]` - The source file of opendj.zip, default `https://s3-ap-southeast-1.amazonaws.com/megam/chef/opendj/opendj.zip`
+* `node["opendj"]["arg-val"]["baseDN"]` - LDAP BaseDN value, default `dc=example,dc=com`
+* `node["opendj"]["arg-val"]["rootUserDN"]` - LDAP root user name, default `'n=Directory Manager'`
+* `node["opendj"]["arg-val"]["rootUserPassword"]` - LDAP root user password, default `secret12`
+* `node["opendj"]["arg-val"]["ldapPort"]` - LDAP port value, default `1389`
 
 Usage
 =====

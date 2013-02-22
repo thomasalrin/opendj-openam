@@ -13,7 +13,7 @@ default["opendj"]["source"] = "https://s3-ap-southeast-1.amazonaws.com/megam/che
 
 #Arguement's values for the below command
 default["opendj"]["arg-val"]["baseDN"] = "dc=example,dc=com"
-default["opendj"]["arg-val"]["rootUserDN"] = "n=Directory Manager"
+default["opendj"]["arg-val"]["rootUserDN"] = "cn=Directory Manager"
 default["opendj"]["arg-val"]["rootUserPassword"] = "secret12"
 default["opendj"]["arg-val"]["ldapPort"] = "1389"
 
