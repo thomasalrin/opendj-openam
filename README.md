@@ -42,7 +42,7 @@ Simply include the recipe where you want OpenDj installed. This run a single ins
 An example for a opendj role:
 
     name "opendj"
-    run_list "recipe[apt]", "recipe[opendj::single_instance]"
+    run_list "recipe[apt]", "recipe[opendj-openam::single_instance]"
 
 TO-DO
 =====

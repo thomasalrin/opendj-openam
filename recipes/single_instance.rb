@@ -1,6 +1,6 @@
 #
-# Cookbook Name:: opendj
-# Recipe:: default
+# Cookbook Name:: opendj-openam
+# Recipe:: single_instance
 #
 # Copyright 2012, Megam Systems
 #

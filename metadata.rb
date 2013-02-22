@@ -1,4 +1,4 @@
-name 		 "opendj"
+name 		 "opendj-openam"
 maintainer       "Megam Syaytems"
 maintainer_email "alrin@megam.co.in"
 license          "Apache 2.0"
@@ -14,4 +14,4 @@ end
   supports os
 end
 
-recipe "opendj::single_instance", "Installs and configures OpenDJ"
+recipe "opendj-openam::single_instance", "Installs and configures OpenDJ"
