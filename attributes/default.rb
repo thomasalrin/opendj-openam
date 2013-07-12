@@ -9,7 +9,7 @@ default["opendj"]["home"] = "/home/ubuntu"
 default["opendj"]["dir-path"]["tmp"] = "/home/ubuntu/tmp"
 
 #Source files
-default["opendj"]["source"] = "https://s3-ap-southeast-1.amazonaws.com/megam/chef/opendj/opendj.zip"
+default["opendj"]["source"] = "https://s3-ap-southeast-1.amazonaws.com/megampub/0.1/war/opendj/opendj.zip"
 
 #Arguement's values for the below command
 default["opendj"]["arg-val"]["baseDN"] = "dc=example,dc=com"
@@ -18,7 +18,7 @@ default["opendj"]["arg-val"]["rootUserPassword"] = "secret12"
 default["opendj"]["arg-val"]["ldapPort"] = "1389"
 
 #shell commands
-default["opendj"]["cmd"]["config"] = "./opendj/setup --cli --baseDN  #{node["opendj"]["arg-val"]["baseDN"]}  --rootUserDN  '#{node["opendj"]["arg-val"]["rootUserDN"]}' --rootUserPassword  #{node["opendj"]["arg-val"]["rootUserPassword"]} -h `hostname` --ldapPort #{node["opendj"]["arg-val"]["ldapPort"]} --no-prompt"
+default["opendj"]["cmd"]["config"] = "./opendj/setup --cli --baseDN  #{node["opendj"]["arg-val"]["baseDN"]}  --rootUserDN  '#{node["opendj"]["arg-val"]["rootUserDN"]}' --rootUserPassword  #{node["opendj"]["arg-val"]["rootUserPassword"]} --ldapPort #{node["opendj"]["arg-val"]["ldapPort"]} --no-prompt"
 
 #Remote file location
 default["opendj"]["remote-location"]["opendj-zip"] = "/home/ubuntu/tmp/opendj.zip"
